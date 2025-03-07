@@ -1,0 +1,15 @@
+meta {
+  name: Savar imagem
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{api}}/file-upload/single
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  image: @file(C:\Users\RISE-ADS\Desktop\GABRIEL_GUEDES_RODRIGUES\cover-flask.jpg)
+}
